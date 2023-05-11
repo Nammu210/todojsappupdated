@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Promise chaining in JavaScript </title>
+</head>
+<body>
+   <h3> Promise Chaining</h3>
+   <p id ="result"></p>
+   <script>
+      let promise = new Promise(function (resolve, reject) {
+         return resolve(10);
+      });
+      promise.then(function(firstPromise_val) {
+         alert(firstPromise_val)
+         document.getElementById("result").innerHTML += "First Promise val: "+firstPromise_val+"<br>";
+         return firstPromise_val+10;
+      }).
+      then(function(secondPromise_val){
+         alert(secondPromise_val)
+         document.getElementById("result").innerHTML +="Second Promise val: "+ secondPromise_val+"<br>";
+         return secondPromise_val+10;
+      }).
+      then(function(thirdpromise_val){
+         alert(thirdpromise_val)
+         document.getElementById("result").innerHTML +="Third Promise val: "+thirdpromise_val+"<br>";
+         return thirdpromise_val+10;
+      })
+   </script>
+</body>
+</html>  

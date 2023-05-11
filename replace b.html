@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Replace Text Example</title>
+    <script>
+      function replaceText() {
+        const content = document.getElementById('content');
+        content.textContent = 'Welcome to Elevation academy';
+      }
+    </script>
+  </head>
+  <body>
+    <p id="content">Hello world</p>
+    <button onclick="replaceText()">Replace Text</button>
+  </body>
+</html>
+In this example, we have a p element with an id of content that initially contains the text "Hello world". 
+We also have a button element that has an onclick attribute set to call the replaceText function when clicked.
+
+The replaceText function uses the getElementById method to select the content element and 
+then sets its textContent property to "Welcome to Elevation academy".
+ This replaces the original text with the new text.
+
+When the button is clicked, it calls the replaceText function, which changes the text on the page.
+
+
+
+
+
